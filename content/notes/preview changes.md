@@ -13,6 +13,7 @@ Note that both of these steps need to be completed.
 This step will generate the list of backlinks for Hugo to parse. Ensure you have [Go](https://golang.org/doc/install) (>= 1.16) installed.
 
 ```bash
+brew install go
 # Install and link `hugo-obsidian` locally
 go install github.com/jackyzha0/hugo-obsidian@latest
 ```
@@ -22,7 +23,25 @@ If you are running into an error saying that `command not found: hugo-obsidian`,
 Afterwards, start the Hugo server as shown above and your local backlinks and interactive graph should be populated!
 
 ##  Installing Hugo
-Hugo is the static site generator that powers Quartz. [Install Hugo with "extended" Sass/SCSS version](https://gohugo.io/getting-started/installing/) first. Then,
+Hugo is the static site generator that powers Quartz. [Install Hugo with "extended" Sass/SCSS version](https://gohugo.io/getting-started/installing/) first. 
+
+On mac, I did this:
+
+```shell
+cd ~/Downloads
+wget -c https://github.com/gohugoio/hugo/releases/download/v0.102.3/hugo_extended_0.102.3_macOS-universal.tar.gz
+tar -xvzf hugo_extended_0.102.3_macOS-universal.tar.gz
+mv hugo ~/go/bin/
+## check the version
+$ hugo version
+zsh: command not found: hugo
+
+## add PATH (zsh)
+path=('~/go/bin' $path)
+export PATH
+```
+
+Then,
 
 ```bash
 # Navigate to your local Quartz folder
