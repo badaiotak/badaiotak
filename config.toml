@@ -1,4 +1,4 @@
-baseURL = "https://badaiotak.github.io/garden/"
+baseURL = "https://badaiotak.github.io/"
 languageCode = "en-us"
 googleAnalytics = ""
 relativeURLs = false
