@@ -1,3 +1,7 @@
+---
+title: "Quartz"
+---
+
 [Quartz](https://quartz.jzhao.xyz/) is created by Jacky Zhao to host digital garden with cool features:
 
 1. Extremely fast natural-language [[notes/search|search]]
